@@ -40,6 +40,72 @@
     }
     footer a { color: rgba(0,0,0,0.45); text-decoration: none; margin: 0 8px; }
     footer a:hover { text-decoration: underline; }
+
+    .info-section {
+      max-width: 600px;
+      width: 100%;
+      margin-top: 64px;
+      text-align: left;
+    }
+    .info-section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #f9a660;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .info-section > p {
+      font-size: 1rem;
+      color: rgba(0,0,0,0.55);
+      line-height: 1.7;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .phases {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .phase {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .phase-box {
+      width: 68px;
+      height: 68px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+    .phase span {
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .benefits {
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-top: 16px;
+    }
+    .benefit {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+    }
+    .benefit:last-child { border-bottom: none; }
+    .benefit-icon { font-size: 1.15rem; flex-shrink: 0; margin-top: 2px; }
+    .benefit strong { display: block; font-size: 0.95rem; color: rgba(0,0,0,0.80); margin-bottom: 2px; }
+    .benefit p { font-size: 0.82rem; color: rgba(0,0,0,0.50); line-height: 1.5; margin: 0; }
   </style>
 </head>
 <body>
@@ -47,6 +113,41 @@
   <h1>BoxPeach</h1>
   <p class="tagline">A calm little breathing buddy for your pocket. Box breathing in four equal sides — inhale, hold, exhale, hold.</p>
   <a class="badge" href="https://apps.apple.com/app/boxpeach" target="_blank">Download on the App Store</a>
+
+  <section class="info-section">
+    <h2>What is Box Breathing?</h2>
+    <p>Four equal sides. Inhale, hold, exhale, hold. Each 4 seconds — like tracing a box.<br>Used by athletes, surgeons, and Navy SEALs to stay calm under pressure.</p>
+    <div class="phases">
+      <div class="phase">
+        <div class="phase-box" style="background:rgba(249,166,96,0.2);color:#f9a660">4s</div>
+        <span style="color:#f9a660">Inhale</span>
+      </div>
+      <div class="phase">
+        <div class="phase-box" style="background:rgba(62,140,81,0.2);color:#3e8c51">4s</div>
+        <span style="color:#3e8c51">Hold</span>
+      </div>
+      <div class="phase">
+        <div class="phase-box" style="background:rgba(245,134,111,0.2);color:#f5866f">4s</div>
+        <span style="color:#f5866f">Exhale</span>
+      </div>
+      <div class="phase">
+        <div class="phase-box" style="background:rgba(62,140,81,0.2);color:#3e8c51">4s</div>
+        <span style="color:#3e8c51">Hold</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <h2>Benefits of Breathwork</h2>
+    <div class="benefits">
+      <div class="benefit"><span class="benefit-icon">💨</span><div><strong>Stress Relief</strong><p>Lowers cortisol and triggers the body's natural calm.</p></div></div>
+      <div class="benefit"><span class="benefit-icon">🧠</span><div><strong>Sharper Focus</strong><p>Clears mental fog and improves attention.</p></div></div>
+      <div class="benefit"><span class="benefit-icon">❤️</span><div><strong>Heart Health</strong><p>Regular practice may help reduce blood pressure.</p></div></div>
+      <div class="benefit"><span class="benefit-icon">🌙</span><div><strong>Better Sleep</strong><p>Helps quiet racing thoughts and prepares the nervous system for deep rest.</p></div></div>
+      <div class="benefit"><span class="benefit-icon">⚡</span><div><strong>Peak Performance</strong><p>Trusted by Navy SEALs, surgeons, and elite athletes.</p></div></div>
+      <div class="benefit"><span class="benefit-icon">🌿</span><div><strong>Emotional Balance</strong><p>Builds the pause between feeling and reacting — the foundation of emotional regulation.</p></div></div>
+    </div>
+  </section>
   <footer>
     <p>&copy; 2026 BoxPeach</p>
     <p style="margin-top:8px;">
